@@ -1,0 +1,36 @@
+{
+  "parser": "babel-eslint",
+  "plugins": ["jest", "prettier"],
+  "extends": ["airbnb-base", "plugin:prettier/recommended"],
+  "globals": {
+    "document": true,
+    "window": true,
+    "jQuery": true,
+    "$": true,
+    "localStorage": true,
+    "fetch": true
+  },
+  "root": true,
+  "rules": {
+    "prettier/prettier": ["error"],
+    "indent": ["error", 2],
+    "jest/no-disabled-tests": "warn",
+    "jest/no-focused-tests": "error",
+    "jest/no-identical-title": "error",
+    "jest/prefer-to-have-length": "warn",
+    "jest/valid-expect": "error",
+    "no-trailing-spaces": [2, { "skipBlankLines": true }],
+    "prefer-template": 0,
+    "import/prefer-default-export": 0,
+    "import/no-unresolved": 0,
+    "import/no-extraneous-dependencies": 0,
+    "import/extensions": 0,
+    "babel/object-curly-spacing": 0
+  },
+  "env": {
+    "es6": true,
+    "jest": true,
+    "browser": true,
+    "node": true
+  }
+}
