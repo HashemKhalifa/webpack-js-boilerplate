@@ -1,5 +1,8 @@
-const app = document.getElementById('app');
-const headLine = document.createElement('h2');
-app.appendChild(headLine);
+import styles from './styles.scss';
 
-headLine.innerText = 'Hello from Webpack JS Boilerplate';
+const app = document.getElementById('app');
+
+app.insertAdjacentHTML(
+  'beforebegin',
+  '<p class="' + styles.headline + '">Hello from Webpack JS Boilerplate </p>',
+);
